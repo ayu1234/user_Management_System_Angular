@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="mainDiv">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <div>
+    <button (click)="registerUserFunc()">Register User</button>
+    <app-register-user *ngIf="registerUser"></app-register-user>
+  </div>
+</div>
+<div>
+  <button (click)="showUserslist()">Users List</button>
+  <app-show-users-list *ngIf="userslist"></app-show-users-list>
+</div>
+<router-outlet></router-outlet>

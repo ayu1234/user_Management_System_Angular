@@ -1,0 +1,51 @@
+#mainDiv{
+    width: 100%;
+    border-radius: 2%;
+    height: 250px;
+    margin-top: 7%;
+}
+
+#headingPart{
+    width: 19%;
+    float: left;
+    text-align: center;
+    height: 25px;
+    border: 2px #0087ff solid;
+    padding-top: 8px;
+    color: #3a2b52;
+    font-size: 16px;
+    font-weight: 600;
+}
+#bodyPart{
+    width: 19%;
+    float: left;
+    text-align: center;
+    height: 25px;
+    border-left: 2px #0087ff solid;
+    border-right: 2px #0087ff solid;
+    border-bottom: 2px #0087ff solid;
+    padding-top: 8px;
+    color: #3a2b52;
+    font-size: 12px;
+    font-weight: 600;
+}
+#addUser{
+    margin-left: 15%;
+    width: 70%;
+}
+#field{
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+#formrow{
+    width: -webkit-fill-available;
+    height: 30px;
+    padding-top: 2%;
+}
+#formrowbutton{
+    width: -webkit-fill-available;
+    height: 30px;
+    padding-top: 2%;
+    text-align: center;
+}

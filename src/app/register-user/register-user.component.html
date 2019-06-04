@@ -1,0 +1,52 @@
+<div id="addUser">
+  <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)" >
+    <div id="formrow">
+      <div id="field"><label for="name">Name</label></div>
+      <div id="field">
+          <input type = "text" class = "fortextbox" [(ngModel)]="data.name" name = "name" placeholder = "Paul" id="name" formControlName = "name">
+      </div>
+    </div>
+    <div id="formrow">
+      <div id="field"> <label for="emailId">Email Id</label></div>
+      <div id="field">
+        <input type = "email" class = "fortextbox" [(ngModel)]="data.emailid" name = "emailid" id="emailId" placeholder = "paultest@gmail.com" formControlName = "emailid">
+      </div>
+    </div>
+    <div id="formrow">
+      <div id="field"> <label for="phone">Contact Number</label></div>
+      <div id="field">
+        <input type = "number" class = "fortextbox" [(ngModel)]="data.phone" name = "phone" id="phone" placeholder = "0123456789" formControlName = "phone">
+      </div>
+    </div>
+    <div id="formrow">
+      <div id="field"><label for="url">Your LinkedIn Profile Url</label></div>
+      <div id="field">
+        <input type = "url" class = "fortextbox" [(ngModel)]="data.url" name = "url" id="url" placeholder = "test.com" formControlName = "url">
+      </div>
+    </div>
+    <div id="formrow">
+      <div id="field"><label for="gender">Select Gender: </label></div>
+      <div id="field">
+          <span>Male</span><input type = "radio" class = "fortextbox" id="gender" [(ngModel)]="data.gender" name = "gender" value = "male" formControlName = "gender">
+          <span>Female</span><input type = "radio" class = "fortextbox" id="gender" [(ngModel)]="data.gender" name = "gender" value = "female" formControlName = "gender">
+      </div>
+    </div>
+    <div id="formrow">
+      <div id="field"><label for="date">Birth Date</label></div>
+      <div id="field">
+        <input type = "date" class = "fortextbox" [(ngModel)]="data.birthdate" name = "birthdate" id="birthdate" placeholder = "03-09-1998" formControlName = "birthdate">
+      </div>
+    </div>
+    <div id="formrow">
+      <div id="field"><label for="description">Description</label></div>
+      <div id="field">
+        <textarea class = "fortextbox" [(ngModel)]="data.description" name = "description" id="description" placeholder = "I am a software Engineer" formControlName = "description"></textarea>
+      </div>
+    </div>
+    <div id="formrow"><input type = "submit" [disabled] = "!formdata.valid" class = "forsubmit" value = "Submit"></div>
+  </form>
+</div>
+
+<p *ngIf="datasubmit">
+  User Added
+</p>
